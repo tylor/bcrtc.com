@@ -70,6 +70,8 @@
 	</style>
 	<script>
 		var counter = document.querySelector('.js-counter');
-		counter.src = 'counter' + (Math.floor(Math.random() * 3) +1) + '.png';
+		var count = (parseInt(localStorage.getItem('skytrain-counter') || 0) % 3) + 1;
+		localStorage.setItem('skytrain-counter', count);
+		counter.src = 'counter' + count + '.png';
 	</script>
 </html>
