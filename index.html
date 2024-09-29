@@ -9,18 +9,26 @@
 	<body>
 		<h1 class="visually-hidden">BC Rapid Transit Company - BCRTC.com</h1>
 		<img src="2024-09-29-BC-Rapid-Transit-Corporation.gif" alt="BC Rapid Transit Corporation">
+		<!-- https://www.youtube.com/watch?v=SQXXOEv-dHI -->
 		<audio autoplay loop controls>
 			<source src="skytrain.mp3" type="audio/mpeg">
 		</audio>
 		<img src="The-Race.jpg" alt="Two SkyTrain cars racing">
-		<h1>We love the Skytrain!!!!</h1>
+		<h1>ride the Skytrain!!!!</h1>
+
+		<br>
+		<br>
+		<img src="imageedit_3_6688020388.gif" alt="SkyTrain with Glitter!">
+		<br>
+		<br>
+		<img class="js-counter" src="" alt="Visitor Count">
 	</body>
 	<style>
 		body {
 			background: url(unnamed.gif);
 			background-color: #f0f0f0;
 			font-family: Arial, sans-serif;
-			margin: 0 10px 100px;
+			margin: 0 10px 50px;
 			padding: 0;
 		}
 		@media screen and (min-width: 768px) {
@@ -39,6 +47,7 @@
 			margin: 0;
 			padding: 10px;
 			text-align: center;
+			font-family: cursive;
 		}
 		audio {
 			display: block;
@@ -59,4 +68,8 @@
 			width: 1px;
 		}
 	</style>
+	<script>
+		var counter = document.querySelector('.js-counter');
+		counter.src = 'counter' + (Math.floor(Math.random() * 3) +1) + '.png';
+	</script>
 </html>
